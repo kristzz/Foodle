@@ -1,0 +1,106 @@
+:root{
+  /* colors for everything */
+  --orangey-color: #CB997E;
+  --vanilla-color: #EDDCD2;
+  --green-color: #A5A58D;
+  --white-color: #FFFFFF;
+  --black-color: #000000;
+
+  /* fonts for everything */
+
+  --heading-font: 'SF Pro Display';
+  --text-font: 'SF Pro Text';
+}
+
+body{
+  background: var(--orangey-color);
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+}
+
+h1{
+  font-family: var(--heading-font);
+  margin-top: 0.625rem;
+  margin-bottom: 0.625rem;
+}
+
+p{
+  font-family: var(--text-font);
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+a{
+  font-family: var(--text-font);
+  margin-top: 0.625rem;
+  margin-bottom: 0.625rem;
+}
+
+button{
+  padding: 0;
+  border: none;
+}
+
+*:focus {
+  outline: none;
+}
+
+.SignUpLogInSubmit{
+  height: 40px;
+  width: 280px;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 1rem;
+  padding: 0 0 0 1rem;
+  border: none;
+  background: var(--green-color);
+  font-size: 1.125rem;
+  left: 52px;
+}
+
+.SignUpLogInBtn{
+  height: 50px;
+  width: 360px;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+
+  background: var(--green-color);
+  border-radius: 1rem;
+  color: var(--black-color);
+  font-family: var(--text-font);
+  font-size: 1.125rem;
+
+  transition :background 0.2s ease-out 100ms; 
+}
+
+.SignUpLogInBtn:hover{
+  background: var(--orangey-color);
+  color: var(--vanilla-color);
+  cursor: pointer;
+}
+
+.RouterRedirect{
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 140px;
+
+  color: var(--black-color);
+  font-family: var(--text-font);
+  font-size: 1.125rem;
+
+  transition :all 0.1s ease-out 100ms;
+}
+
+.RouterRedirect:hover{
+  transform: scale(1.03);
+  color: var(--orangey-color);
+}
