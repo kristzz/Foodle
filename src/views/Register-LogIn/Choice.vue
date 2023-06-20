@@ -10,7 +10,7 @@ export default {
     <div id="parent">
       <div id="Container">
         <h1>Foodle</h1>
-        <p>aaaaaaaaaaaaaaa</p>
+        <p>Welcome to the food recipe kingdom</p>
 
         <router-link :to="{ name: 'signup' }">
             <div id="SignUpBtn" class="SignUpLogInBtn">Sign Up</div>
