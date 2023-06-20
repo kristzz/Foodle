@@ -9,7 +9,9 @@ import Choice from '../views/Register-LogIn/Choice.vue';
 import Settings from '../views/Settings.vue';
 import Account from '../views/Settings/Account.vue';
 import Security from '../views/Settings/Security.vue';
-import ChangeAccount from '../views/Settings/ChangeAccount.vue';
+import Notifications from '../views/Settings/Notifications.vue';
+import TermsOfService from '../views/Settings/TermsOfService.vue';
+import About from '../views/Settings/About.vue'
 
 import { getUserState } from '/src/firebase.js';
 
@@ -69,9 +71,20 @@ const router = createRouter({
       meta: { requiresAuth: true }
     },
     {
-      path: '/settings/changeaccount',
-      name: 'changeaccount',
-      component: ChangeAccount,
+      path: '/settings/notifications',
+      name: 'notifications',
+      component: Notifications,
+      meta: { requiresAuth: true }
+    },
+    {
+      path: '/settings/termsofservice',
+      name: 'termsofservice',
+      component: TermsOfService
+    },
+    {
+      path: '/settings/about',
+      name: 'about',
+      component: About,
       meta: { requiresAuth: true }
     }
   ]

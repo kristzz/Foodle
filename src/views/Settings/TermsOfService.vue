@@ -11,8 +11,7 @@ export default {
 <template>
     <Settings />
     <div id="secondaryContainer">
-        Verify your e-mail:
-        Change your password:
+        Read Terms of Service here:
     </div>
 </template>
 

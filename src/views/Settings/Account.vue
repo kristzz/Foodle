@@ -10,9 +10,8 @@ export default {
 
 <template>
     <Settings />
-
     <div id="secondaryContainer">
-    
+        hi account
     </div>
 </template>
 

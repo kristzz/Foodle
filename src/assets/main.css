@@ -104,3 +104,16 @@ button{
   transform: scale(1.03);
   color: var(--orangey-color);
 }
+
+
+#secondaryContainer{
+  height: 460px;
+  width: 400px;
+  position: absolute;
+  top: 12rem;
+  left: 337px;
+
+  background: var(--vanilla-color);
+  border-radius: 0 1rem 1rem 0;
+  padding: 20px;
+}
