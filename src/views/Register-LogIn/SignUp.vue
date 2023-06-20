@@ -31,7 +31,7 @@ export default {
   
   <main>
     <div id="parent">
-      <div id="mainContainer">
+      <div id="Container">
         <form @submit.prevent="handleSubmit">
           <input id="Email" class="SignUpLogInSubmit" type="email"  v-model="email" placeholder="youremail@example.com"/>
           <input id="Pass" class="SignUpLogInSubmit" type="password"  v-model="password" placeholder="Password"/>
@@ -52,17 +52,6 @@ export default {
     place-items: center;
     margin: 0;
     padding: 0;
-  }
-
-  #mainContainer{
-    height: 460px;
-    width: 360px;
-    position: relative;
-    top: 12rem;
-
-    background: var(--vanilla-color);
-    border-radius: 5%;
-    padding: 20px;
   }
 
   #SignUp{top: 375px;}

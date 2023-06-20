@@ -8,7 +8,7 @@ export default {
 <template>
   <main>
     <div id="parent">
-      <div id="mainContainer">
+      <div id="Container">
         <h1>Foodle</h1>
         <p>aaaaaaaaaaaaaaa</p>
 
@@ -33,14 +33,14 @@ export default {
     padding: 0;
   }
 
-  #mainContainer{
+  #Container{
     height: 460px;
     width: 360px;
     position: relative;
     top: 12rem;
 
     background: var(--vanilla-color);
-    border-radius: 5%;
+    border-radius: 1rem;
     padding: 20px;
   }
 
