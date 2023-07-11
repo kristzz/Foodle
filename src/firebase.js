@@ -13,29 +13,28 @@ export const firebaseApp = initializeApp({
 
 export const getUserState = () =>
   new Promise((resolve, reject) => {
-    const unsubscribe = onAuthStateChanged(getAuth(), resolve, reject)
-    // Clean up the subscription after resolving or rejecting the promise
-    return () => unsubscribe()
-  })
+    const unsubscribe = onAuthStateChanged(getAuth(), resolve, reject);
+    return () => unsubscribe();
+  });
 
 export const useAuthState = () => {
-  const user = ref(null)
-  const error = ref(null)
+  const user = ref(null);
+  const error = ref(null);
 
-  const auth = getAuth()
-  let unsubscribe
+  const auth = getAuth();
+  let unsubscribe;
 
   onMounted(() => {
     unsubscribe = onAuthStateChanged(
       auth,
       (u) => (user.value = u),
       (e) => (error.value = e)
-    )
-  })
+    );
+  });
 
-  onUnmounted(() => unsubscribe())
+  onUnmounted(() => unsubscribe());
 
-  const isAuthenticated = computed(() => user.value !== null)
-  
-  return { user, error, isAuthenticated }
-}
+  const isAuthenticated = computed(() => user.value !== null);
+
+  return { user, error, isAuthenticated };
+};

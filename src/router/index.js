@@ -1,10 +1,12 @@
 import { createRouter, createWebHistory } from 'vue-router';
-import Home from '../views/Home.vue';
+
 import Search from '../views/Search.vue';
 
 import SignUp from '../views/Register-LogIn/SignUp.vue';
 import LogIn from '../views/Register-LogIn/LogIn.vue';
 import Choice from '../views/Register-LogIn/Choice.vue';
+
+import Home from '../views/Home/Home.vue';
 
 import Settings from '../views/Settings.vue';
 import Account from '../views/Settings/Account.vue';
